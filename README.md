@@ -212,24 +212,24 @@ App.tsx (메인 컨테이너)
 | - [ ] | chore: add eslint + prettier |
 </code></pre>
 ---
-<pre><code>
 ### 2. 공용 설정
+<pre><code>
 | 버전 | 상태 | 항목 |
 |------|------|
 | - [ ] | chore: add global styles and fonts (Pretendard) |
 | - [ ] | chore: configure tsconfig paths and aliases |
 </code></pre>
 ---
-<pre><code>
 ### 3. 타입 & 유틸
+<pre><code>
 | 버전 | 상태 | 항목 |
 |------|------|
 | - [ ] | feat(types): add common interfaces (user, auth, board) |
 | - [ ] | feat(utils): add api client and helpers |
 </code></pre>
 ---
-<pre><code>
 ### 4. UI 레이아웃
+<pre><code>
 | 버전 | 상태 | 항목 |
 |------|------|
 | - [ ] | feat(layout): add header and footer |
@@ -237,8 +237,8 @@ App.tsx (메인 컨테이너)
 | - [ ] | feat(layout): add container and responsive grid |
 </code></pre>
 ---
-<pre><code>
 ### 5. 주요 기능
+<pre><code>
 | 버전 | 상태 | 항목 |
 |------|------|
 | - [ ] | feat(auth): add login component |
@@ -248,8 +248,8 @@ App.tsx (메인 컨테이너)
 | - [ ] | feat(reservation): integrate calendar/time picker |
 </code></pre>
 ---
-<pre><code>
 ### 6. 스타일 & UI 개선
+<pre><code>
 | 버전 | 상태 | 항목 |
 |------|------|
 | - [ ] | style: apply tailwind theme tokens (colors, spacing) |
@@ -257,8 +257,8 @@ App.tsx (메인 컨테이너)
 | - [ ] | style: add responsive hero section |
 </code></pre>
 ---
-<pre><code>
 ### 7. 기타 관리
+<pre><code>
 | 버전  | 상태 | 항목 |
 |------|------|
 | - [ ] | docs: add README with project setup instructions |

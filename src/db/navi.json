@@ -1,0 +1,54 @@
+{
+  "kr": {
+    "about": {
+      "path": "/content/about",
+      "label": "소개"
+    },
+    "location": {
+      "path": "/content/location",
+      "label": "오시는길"
+    },
+    "history": {
+      "path": "/content/history",
+      "label": "연혁"
+    },
+    "notice": {
+      "path": "/board/notice",
+      "label": "공지사항"
+    },
+    "inquiry": {
+      "path": "/board/inquiry",
+      "label": "견적문의"
+    },
+    "showroom": {
+      "path": "/board/showroom",
+      "label": "쇼룸"
+    }
+  },
+  "en": {
+    "about": {
+      "path": "/en/content/about",
+      "label": "About"
+    },
+    "location": {
+      "path": "/en/content/location",
+      "label": "Location"
+    },
+    "history": {
+      "path": "/en/content/history",
+      "label": "History"
+    },
+    "notice": {
+      "path": "/en/board/notice",
+      "label": "Notice"
+    },
+    "inquiry": {
+      "path": "/en/board/inquiry",
+      "label": "Inquiry"
+    },
+    "showroom": {
+      "path": "/en/board/showroom",
+      "label": "Showroom"
+    }
+  }
+}
