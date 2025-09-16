@@ -1,5 +1,5 @@
 import React from "react";
-import noticeData from "../db/notice.json";
+import noticeData from "../db/news.json";
 import { GlobalNotice, NoticeProps } from "../db/type/common";
 
 const notices: GlobalNotice = noticeData as GlobalNotice;

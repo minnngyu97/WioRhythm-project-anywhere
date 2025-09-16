@@ -26,29 +26,29 @@
     }
   },
   "en": {
-    "about": {
-      "path": "/en/content/about",
-      "label": "About"
+    "wiorhythm": {
+      "path": "/en/content/wiorhythm",
+      "label": "Wio Rhythm"
     },
-    "location": {
-      "path": "/en/content/location",
-      "label": "Location"
+    "mypick": {
+      "path": "/en/content/mypick",
+      "label": "My Pick"
     },
-    "history": {
-      "path": "/en/content/history",
-      "label": "History"
+    "myplan": {
+      "path": "/en/content/myplan",
+      "label": "My Plan"
     },
-    "notice": {
-      "path": "/en/board/notice",
-      "label": "Notice"
+    "allproducts": {
+      "path": "/en/board/allproducts",
+      "label": "All Products"
     },
-    "inquiry": {
-      "path": "/en/board/inquiry",
-      "label": "Inquiry"
+    "premium": {
+      "path": "/en/board/premium",
+      "label": "Premium"
     },
-    "showroom": {
-      "path": "/en/board/showroom",
-      "label": "Showroom"
+    "wiotable": {
+      "path": "/en/board/wiotable",
+      "label": "Wio Table"
     }
   }
 }
