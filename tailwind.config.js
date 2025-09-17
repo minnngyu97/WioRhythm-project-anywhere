@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         pretendard: ["Pretendard", "sans-serif"],
       },
+      maxWidth: {
+        '1520': '1520px',
+      },
     },
   },
   plugins: [],

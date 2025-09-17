@@ -1,43 +1,35 @@
-// BannerSwiper.tsx
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 
-// import "../styles/swiper.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import bannerData from "../db/mainBanner.json";
 
 const BannerSwiper: React.FC = () => {
   return (
     <div className="md:w-screen mx-auto">
       <Swiper
-        pagination={{ type: "fraction" }}
-        navigation
-        modules={[Pagination, Navigation, Autoplay]}
-        slidesPerView={5}
-        centeredSlides={true}
-        spaceBetween={30}
+        slidesPerView={1}
+        spaceBetween={0}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
         loop={true}
-        className="h-[500px]"
+        className="mySwiper h-[800px]"
       >
-        {[
-          "특가이벤트",
-          "구독이벤트",
-          "할인이벤트",
-          "자동롤링해줘",
-          "3초마다",
-          "2개씩보이게해줘",
-        ].map((v, i) => (
-          <SwiperSlide
-            key={i}
-            className="flex items-center justify-center border rounded-lg bg-white shadow-sm"
-          >
-            {v}
+        {bannerData.map((item) => (
+          <SwiperSlide key={item.id}>
+            <Link to={item.link}>
+              <img
+                src={item.image}
+                alt={item.alt}
+                className="w-full h-[800px] object-cover rounded-lg shadow-sm"
+              />
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

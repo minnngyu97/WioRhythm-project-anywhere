@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "/mainBanner1.png",
+    "alt": "특가 이벤트",
+    "link": "/event/special"
+  },
+  {
+    "id": 2,
+    "image": "/mainBanner2.png",
+    "alt": "구독 이벤트",
+    "link": "/event/subscribe"
+  },
+  {
+    "id": 3,
+    "image": "/mainBanner3.png",
+    "alt": "할인 이벤트",
+    "link": "/event/discount"
+  },
+  {
+    "id": 4,
+    "image": "/mainBanner4.png",
+    "alt": "자동 롤링 배너",
+    "link": "/event/auto"
+  },
+  {
+    "id": 5,
+    "image": "/mainBanner5.png",
+    "alt": "3초마다 보이는 배너",
+    "link": "/event/3sec"
+  }
+]

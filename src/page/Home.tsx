@@ -18,10 +18,7 @@ const Home: React.FC = () => {
   // };
 
   return (
-    <section className="py-10 text-center">
-      <p className="mb-6 text-lg font-medium text-gray-700">
-        {/* Language: {getLanguageLabel()} */}
-      </p>
+    <section className="text-center">
       <BannerSwiper />
     </section>
   );

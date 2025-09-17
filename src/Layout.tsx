@@ -1,24 +1,30 @@
+// Layout.tsx
+import { useState } from "react";
 import Hd from "./layout/Hd";
 import Ft from "./layout/Ft";
-import Notice from "./ui/Notice";
 import { LayoutProps } from "../db/type/common";
+import News from "./ui/News";
+import { useHideHeader } from "./hooks/useHideHeader";
+import "./css/layout.css";
 
 const Layout: React.FC<LayoutProps> = ({ children, data, setLeng, leng }) => {
+  useHideHeader();
+
+  const [showNews, setShowNews] = useState(true); // 👈 News 보이기 상태
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
-      <Notice leng={leng} />
-      {/* 헤더 */}
-      <Hd data={data} setLeng={setLeng} />
+      <header>
+        {showNews && <News leng={leng} onClose={() => setShowNews(false)} />}
+        <Hd data={data} setLeng={setLeng} />
+      </header>
 
-      {/* 타이틀 */}
-      {/* <Title /> */}
+      <main>
+        <div className={`${showNews ? "pt-[124px]" : "pt-[64px]"} overflow-hidden`}>
+          {children}
+        </div>
+      </main>
 
-      {/* 메인 컨텐츠 + 퀵메뉴 */}
-      <div className="flex flex-wrap items-start py-6 gap-6 overflow-hidden">
-        <div className="flex-grow">{children}</div>
-      </div>
-
-      {/* 푸터 */}
       <Ft />
     </div>
   );

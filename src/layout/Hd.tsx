@@ -5,21 +5,21 @@ import { HeaderProps } from "../db/type/common";
 const Header: React.FC<HeaderProps> = ({ data, setLeng }) => {
   return (
     <nav className="w-full bg-white shadow-sm relative">
-      <div className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto">
+      <div className="max-w-1520 relative flex items-center justify-between px-[20px] mx-auto">
         {/* 로고 - 왼쪽 */}
-        <h1 className="text-xl font-bold">
-          <Link to="/">
-            <img src="/logo.svg" alt="로고" className="h-10" />
+        <h1 className="absolute top-1/2 -translate-y-1/2 left-[20px]">
+          <Link to="/" className="flex h-[80px]">
+            <img src="/logo.svg" alt="로고" className="" />
           </Link>
         </h1>
 
         {/* 메뉴 - 가운데 */}
-        <ul className="flex gap-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <ul className="w-full flex flex-wrap justify-center">
           {Object.entries(data).map(([key, item]) => (
             <li key={key}>
               <Link
                 to={item.path}
-                className="text-gray-700 hover:text-blue-500 transition-colors"
+                className="block h-[80px] text-gray-700 hover:text-blue-500 transition-colors py-[20px] px-[25px] text-[24px]"
               >
                 {item.label}
               </Link>

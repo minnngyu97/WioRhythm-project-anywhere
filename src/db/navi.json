@@ -1,28 +1,28 @@
 {
   "kr": {
-    "about": {
-      "path": "/content/about",
+    "wiorhythm": {
+      "path": "/content/wiorhythm",
       "label": "소개"
     },
-    "location": {
-      "path": "/content/location",
-      "label": "오시는길"
+    "mypick": {
+      "path": "/content/mypick",
+      "label": "나의 픽"
     },
-    "history": {
-      "path": "/content/history",
-      "label": "연혁"
+    "myplan": {
+      "path": "/content/myplan",
+      "label": "맞춤 구독"
     },
-    "notice": {
-      "path": "/board/notice",
-      "label": "공지사항"
+    "allproducts": {
+      "path": "/board/allproducts",
+      "label": "모든 제품"
     },
-    "inquiry": {
-      "path": "/board/inquiry",
-      "label": "견적문의"
+    "premium": {
+      "path": "/board/premium",
+      "label": "명품관"
     },
-    "showroom": {
-      "path": "/board/showroom",
-      "label": "쇼룸"
+    "wiotable": {
+      "path": "/board/wiotable",
+      "label": "와인바"
     }
   },
   "en": {

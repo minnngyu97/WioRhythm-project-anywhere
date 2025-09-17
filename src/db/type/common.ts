@@ -94,4 +94,20 @@ export interface NoticeProps {
   leng: "kr" | "en";
 }
 
+export interface BannerItem {
+  src: string;
+  title: string;
+  subtitle: string;
+  link: string;
+}
+
+export interface BannerLanguage {
+  banners: BannerItem[];
+}
+
+export interface BannerData {
+  kr: BannerLanguage;
+  en: BannerLanguage;
+}
+
 
