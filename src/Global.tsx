@@ -5,7 +5,7 @@ import App from "./App";
 import sqldata from "./db/navi.json";
 
 // 타입
-import { GlobalData, LanguageData } from "../db/type/common";
+import { GlobalData, LanguageData } from "./db/type/common";
 
 export default function Global() {
   const [leng, setLeng] = useState<"kr" | "en">("kr");

@@ -8,15 +8,15 @@ import Board from "./page/Board";
 import Nopage from "./page/Nopage";
 
 // 타입
-import { AppProps } from "../db/type/common";
+import { AppProps } from "./db/type/common";
 
 const App: React.FC<AppProps> = ({ leng, data, setLeng }) => {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+    <div className="">
       <Layout data={data} leng={leng} setLeng={setLeng}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/:global" element={<Home />} />
+          <Route path="/" element={<Home data={data} />} />
+          <Route path="/:global" element={<Home data={data} />} />
           <Route
             path={`${leng === "kr" ? "" : "/" + leng}/content/:id`}
             element={<Content leng={leng} data={data} />}

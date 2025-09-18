@@ -17,21 +17,28 @@ export interface MenuItem {
   page: Page;
 }
 
-// 언어별 데이터 (about, location, history, notice, inquiry, showroom)
+// 언어별 데이터 
 export interface LanguageData {
-  about: MenuItem;
-  location: MenuItem;
-  history: MenuItem;
-  notice: MenuItem;
-  inquiry: MenuItem;
-  showroom: MenuItem;
+  sectionTitle: SectionTitleItem;
+  wiorhythm: MenuItem;
+  mypick: MenuItem;
+  myplan: MenuItem;
+  allproducts: MenuItem;
+  premium: MenuItem;
+  wiotable: MenuItem;
+}
+
+export interface SectionTitleItem {
+  title: string;
+  subtitle: string;
 }
 
 // 전체 데이터 (kr, en, cn)
 export interface GlobalData {
   kr: LanguageData;
   en: LanguageData;
-  cn: LanguageData;
+  cn?: LanguageData;
+  jp?: LanguageData;
 }
 
 export interface HeaderProps {

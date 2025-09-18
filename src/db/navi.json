@@ -1,5 +1,9 @@
 {
   "kr": {
+    "sectionTitle": {
+      "title": "NEW",
+      "subtitle": "신제품"
+    },
     "wiorhythm": {
       "path": "/content/wiorhythm",
       "label": "소개"
@@ -26,6 +30,10 @@
     }
   },
   "en": {
+    "sectionTitle": {
+      "title": "NEW",
+      "subtitle": "New Products"
+    },
     "wiorhythm": {
       "path": "/en/content/wiorhythm",
       "label": "Wio Rhythm"

@@ -1,25 +1,15 @@
 // Home.tsx
 // import { useParams } from "react-router-dom";
-import BannerSwiper from "../ui/Swiper";
+import SectionTitle from "../ui/SectionTitle";
+import BannerSwiper from "../ui/BannerSwiper";
 // import { HomeParams } from "../db/type/common";
+import { LanguageData } from "../db/type/common";
 
-const Home: React.FC = () => {
-  // const { global } = useParams<HomeParams>();
-
-  // const getLanguageLabel = () => {
-  //   switch (global) {
-  //     case "cn":
-  //       return "중국어 홈컴포넌트를 제작한다.";
-  //     case "en":
-  //       return "영어 홈컴포넌트를 제작한다.";
-  //     default:
-  //       return "한국어 홈컴포넌트를 제작한다.";
-  //   }
-  // };
-
+const Home: React.FC<{ data: LanguageData }> = ({ data }) => {
   return (
     <section className="text-center">
       <BannerSwiper />
+      <SectionTitle data={data.sectionTitle} />
     </section>
   );
 };
