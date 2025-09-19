@@ -118,3 +118,37 @@ export interface BannerData {
 }
 
 
+// ... 위에 있는 타입들 (AppProps, LanguageData 등)
+
+// 다국어 텍스트 (한 줄 or 여러 줄)
+export interface MultiLangText {
+  kr: string | string[];
+  en: string | string[];
+  cn?: string | string[];
+  jp?: string | string[];
+}
+
+// 버튼 구조
+export interface BannerButton {
+  label: MultiLangText;
+  link: string;
+  className: string;
+}
+
+// 배너 아이템
+export interface BannerItem {
+  id: number;
+  image: string;
+  alt: MultiLangText;
+  title: MultiLangText;
+  subtitle: MultiLangText;
+  button: BannerButton;
+  titleClass: string;
+  subtitleClass: string;
+  styleType: string;
+}
+
+// 전체 배너 데이터 배열
+export type BannerData = BannerItem[];
+
+

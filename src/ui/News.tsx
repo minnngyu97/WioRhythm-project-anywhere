@@ -11,7 +11,7 @@ interface NewsProps extends NoticeProps {
 
 const News: React.FC<NewsProps> = ({ leng, onClose }) => {
   return (
-    <div className="bg-[#570E19]">
+    <div className="bg-primary">
       <div className="max-w-1520 relative flex items-center justify-center text-white px-[20px] h-[60px] text-[20px] mx-auto">
         {notices[leng].noticeBar.message}
         <button onClick={onClose} className="absolute flex items-center justify-center right-[10px] p-[10px]">

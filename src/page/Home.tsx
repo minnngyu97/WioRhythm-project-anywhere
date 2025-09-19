@@ -1,15 +1,18 @@
-// Home.tsx
-// import { useParams } from "react-router-dom";
 import SectionTitle from "../ui/SectionTitle";
 import BannerSwiper from "../ui/BannerSwiper";
-// import { HomeParams } from "../db/type/common";
-import { LanguageData } from "../db/type/common";
+import sectionTitleData from "../db/sectionTitle.json";
 
-const Home: React.FC<{ data: LanguageData }> = ({ data }) => {
+interface HomeProps {
+  leng: "kr" | "en";
+}
+
+const Home: React.FC<HomeProps> = ({ leng }) => {
+  const sectionTitle = sectionTitleData[leng].sectionTitle;
+
   return (
     <section className="text-center">
-      <BannerSwiper />
-      <SectionTitle data={data.sectionTitle} />
+      <BannerSwiper leng={leng} />
+      <SectionTitle data={sectionTitle} />
     </section>
   );
 };

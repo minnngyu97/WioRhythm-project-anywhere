@@ -13,6 +13,8 @@ export default {
         //fontFamily 사용법 : font-pretendard
         pretendard: ["Pretendard", "sans-serif"],
         kaushan: ["Kaushan Script", "cursive"],
+        bengali: ["Noto Serif Bengali", "serif"],
+        gangwon: ["GangwonEducationTteontteon", "sans-serif"],
       },
       fontSize: {
         //fontSize 사용법 : text-menu-title
@@ -29,7 +31,20 @@ export default {
         "footer": "1rem",             // 16px → 푸터
         "table": "2rem",              // 32px → 테이블
         "category-menu": "1.375rem",  // 22px → 종류메뉴
-        "navigation": "1.5rem"        // 24px → 네비게이션
+        "navigation": "1.5rem",       // 24px → 네비게이션
+      },
+      colors: {
+        // 🎨 메인 팔레트
+        "primary": "#570E19",       // 메인컬러
+        black: "#000000",      // 기본 폰트
+        new: "#CBAB85",        // NEW
+        best: "#EACACE",       // BEST
+        event: "#B6D3EF",      // EVENT
+        "product-bg": "#F0F0F0", // 상품 이미지 배경
+        "product-bg-hover": "#FFF2F4", // 상품 이미지 hover 배경
+        wish: "#8F0016",       // 찜하기
+        "taste-btn": "#EAE3DC", // 취향찾기 버튼
+        "icon-bg": "#292522",
       },
     },
   },
@@ -37,21 +52,16 @@ export default {
     // JSON에서 쓰는 클래스들 전부 등록
     "font-kaushan",
     "font-pretendard",
-    "bg-blue-500",
-    "hover:bg-blue-600",
-    "bg-yellow-500",
-    "hover:bg-yellow-600",
-    "bg-red-500",
-    "hover:bg-red-600",
-    "bg-green-500",
-    "hover:bg-green-600",
-    "bg-purple-600",
-    "hover:bg-purple-700",
-    "bg-cyan-500",
-    "hover:bg-cyan-600",
-    "bg-gray-700",
-    "hover:bg-gray-800",
-    "text-[80px]"
+    "font-bengali",
+    "font-gangwon",
+    "font-light",
+    "font-normal",
+    "text-primary",
+    "text-[30px]",
+    "text-[#000]",
+    "mb-[20px]",
+    "mb-[0]",
+    "mt-[60px]"
   ],
   plugins: [],
 }

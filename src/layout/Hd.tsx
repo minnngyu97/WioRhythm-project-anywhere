@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ data, setLeng }) => {
             <li key={key}>
               <Link
                 to={item.path}
-                className="block h-[80px] text-gray-700 hover:text-blue-500 transition-colors py-[20px] px-[25px] text-[24px]"
+                className="flex items-center h-[80px] text-gray-700 hover:text-blue-500 transition-colors py-[20px] px-[25px] text-[24px]"
               >
                 {item.label}
               </Link>

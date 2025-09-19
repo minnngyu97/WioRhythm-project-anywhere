@@ -15,8 +15,8 @@ const App: React.FC<AppProps> = ({ leng, data, setLeng }) => {
     <div className="">
       <Layout data={data} leng={leng} setLeng={setLeng}>
         <Routes>
-          <Route path="/" element={<Home data={data} />} />
-          <Route path="/:global" element={<Home data={data} />} />
+          <Route path="/" element={<Home data={data} leng={leng} setLeng={setLeng} />} />
+          <Route path="/:global" element={<Home data={data} leng={leng} setLeng={setLeng} />} />
           <Route
             path={`${leng === "kr" ? "" : "/" + leng}/content/:id`}
             element={<Content leng={leng} data={data} />}

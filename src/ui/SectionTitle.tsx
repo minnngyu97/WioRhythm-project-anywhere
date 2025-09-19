@@ -1,15 +1,17 @@
 import React from "react";
-import { SectionTitleItem } from "../db/type/common";
 
 interface SectionTitleProps {
-  data: SectionTitleItem;
+  data: {
+    title: string;
+    subtitle: string;
+  };
 }
 
 export default function SectionTitle({ data }: SectionTitleProps) {
   return (
-    <div>
-      <h2>{data.title}</h2>
-      <p>{data.subtitle}</p>
+    <div className="my-10">
+      <h2 className="text-4xl font-bold">{data.title}</h2>
+      <p className="text-lg text-gray-600 mt-2">{data.subtitle}</p>
     </div>
   );
 }
