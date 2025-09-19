@@ -152,3 +152,42 @@ export interface BannerItem {
 export type BannerData = BannerItem[];
 
 
+export type Lang = "kr" | "en" | "cn" | "jp";
+
+export interface Price {
+  currency: "KRW" | "USD";
+  list: number;
+  sale?: number;
+}
+
+export interface ProductStats {
+  likes: number;
+  wishlist: number;
+  sales: number;
+}
+
+export interface Product {
+  id: number;
+  slug: string;
+  image: string;
+  name: MultiLangText;
+  categories: string[];     // 예: ["white","australia"]
+  tags?: string[];          // 검색/필터용 태그
+  releaseDate: string;      // ISO string
+  price: Price;
+  stats: ProductStats;
+  wishlistIcons: { on: string; off: string };
+  icons?: string[];         // 우측 세로 아이콘들
+  events?: string[];        // 이벤트 ID 목록
+}
+
+export type ProductList = Product[];
+
+export interface EventItem {
+  id: string;
+  label: MultiLangText;
+  start: string;
+  end: string;
+}
+export type EventList = EventItem[];
+

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "spring-2025",
+    "label": { "kr": "봄 기획전", "en": "Spring Event" },
+    "start": "2025-03-01",
+    "end": "2025-03-31"
+  },
+  {
+    "id": "member-2025",
+    "label": { "kr": "회원전용 혜택", "en": "Member Only" },
+    "start": "2025-01-01",
+    "end": "2025-12-31"
+  }
+]
